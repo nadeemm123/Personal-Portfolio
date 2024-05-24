@@ -6,7 +6,9 @@
 }
 
 .container {
-    background-color: #d2dae2;
+    /* background-color: #d2dae2; */
+    background-color: #0F0716;
+    background: linear-gradient(90deg, #0F0716, #261541);
     padding: 10px 0px;
 }
 
@@ -25,18 +27,26 @@
     gap: 50px;
 }
 
+.personalHeading {
+    color: white;
+}
+
 .rightNav ul {
     list-style: none;
     display: flex;
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
-    color: #000000;
     gap: 30px;
 }
 
+
 .list {
     text-decoration: none;
+}
+
+.rightNav ul a li {
+    color: #FFFFFF !important;
 }
 
 .HeaderMainForRespons {
@@ -53,7 +63,9 @@
     font-weight: 700;
     font-size: 3.2rem;
     line-height: 60px;
-    color: #21243D;
+    background: linear-gradient(90deg, #AA84F9, #d0ccd9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #intro {
@@ -61,7 +73,7 @@
     font-size: 16px;
     padding-top: 10px;
     line-height: 28px;
-    color: #21243D;
+    color: #FFFFFF;
     justify-content: center;
 }
 
@@ -69,12 +81,12 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 29px;
-    color: #FFFFFF;
+    color: #8A54F7;
     background-color: #21243D;
-    padding: 10px 16px;
+    padding: 15px 26px;
     border-style: none;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 50px;
     box-shadow: 0 10px 10px 0 rgba(244, 0, 0, 0.2);
 
 }
@@ -87,8 +99,26 @@
 }
 
 #resume:hover {
-    background-color: #142850;
+    background-color: #8750F7;
+    transition: ease-in 0.6s;
     cursor: pointer;
+}
+
+.resumsocial {
+    display: flex;
+}
+
+.socialIcon ul {
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    padding: 30px 0px 0px 25px;
+}
+
+.social {
+    height: 33px;
+    width: 33px;
 }
 
 #photo {
@@ -99,66 +129,91 @@
     border-top-left-radius: 5%;
     border-bottom-right-radius: 3%;
     margin-top: -20px;
+    transition: transform 0.5s ease;
+    transform: rotate(8deg) translate(-20%, 0%);
+    cursor: pointer;
+}
+
+#photo:hover {
+    transform: rotate(0deg) translate(-20%, 0%);
 
 }
 
+.projectexp {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+
+.projects {
+    display: flex;
+    color: white;
+    gap: 15px;
+}
+
+.projects h2 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 55px;
+}
+
+
+
+
 
 .recentPost {
-    padding-top: 100px;
-    background: #EDF7FA;
+    padding: 100px 0px;
+    background: #0F0715;
+
 }
 
 .viewAll {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+    color: white;
     padding: 30px 4px 10px 10px;
 }
 
 #view a {
     text-decoration: none;
+    color: white;
 }
 
 .mainPost {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .leftPost {
     width: 380px;
-    height: 295px;
-    background: #FFFFFF;
+
+    background: #150234;
     box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
     border-radius: 4px;
-    padding: 30px;
+    padding: 10px 10px;
     margin-top: 20px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
-.rightpost {
-    width: 380px;
-    height: 295px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
-    border-radius: 4px;
-    padding: 30px;
-    margin-top: 20px;
-    margin-left: 10px;
-    padding-right: 10px;
+.blogimg {
+    width: 100%;
 }
 
 .heading {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 25px;
     line-height: 35px;
-    color: #21243D;
+    color: white;
 }
 
 .date {
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
-    color: #21243D;
+    color: #787ecd;
     padding-top: 10px;
 }
 
@@ -166,13 +221,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #21243D;
+    color: #a4a7bf;
     padding-top: 15px;
 }
 
 .FeaturedWork {
     background: #E5E5E5;
-    margin-top: 20px;
 }
 
 .work {
@@ -246,31 +300,71 @@
     color: #21243D;
 }
 
+.contactMees {
+    background-color: #D6CCDF;
+}
+
+.insidecontact {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.contactleft {
+    max-width: 50%;
+    width: 100%;
+    background-color: #140A20;
+    padding: 0px 0px 60px 0px;
+}
+
+.contactright {
+    max-width: 50%;
+    width: 100%;
+    background-color: #d6ccdf;
+    padding: 200px 20px;
+}
+
+.phon1 {
+    background-color: #100227;
+    border: 2px solid green;
+    border-radius: 5px;
+    box-shadow: 0px 5px 20px rgba(131, 7, 145, 0.9);
+    padding: 50px 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
 .UpperPart {
     margin-top: 60px;
     text-align: center;
+    padding: 20px 20px;
 }
 
 .getintouch {
     font-weight: 600;
     font-size: 21.3333px;
     line-height: 150%;
-
-    color: #282938;
+    color: white;
+    text-align: center;
 }
 
 .contactme {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 120%;
-    color: #282938;
+    color: white;
+    text-align: center;
 }
 
-.contactmedetail {
+.contactmedetail,
+.phnemail {
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
-    color: #1C1E53;
+    color: #a7a8c2;
+    padding: 0px 30px;
+    text-align: center;
 }
 
 .fname {
@@ -288,7 +382,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
-    color: #282938;
+    color: white;
     margin-top: 6px;
 }
 
@@ -306,15 +400,17 @@ textarea {
 
 .slecetoption {
     padding: 10px;
-    height: 50px;
+    height: 45px;
+    width: 300px;
     background: #FFFFFF;
     border: 1.33333px solid #5E3BEE;
     border-radius: 8px;
     margin-top: 6px;
+    background: #c9bebe;
 }
 
 .inputtype {
-    background: #FFFFFF;
+    background: #c9bebe;
     border: 1.33333px solid #5E3BEE;
     border-radius: 8px;
     align-items: center;
@@ -324,22 +420,30 @@ textarea {
 
 }
 
+#message {
+    width: 500px;
+    height: 140px;
+    border-radius: 10px;
+    background: #c9bebe;
+}
+
 .accept {
     display: flex;
     gap: 10.67px;
     margin-top: 6px;
+    color: white;
 }
 
 .submitbutton {
-    padding: 15px 20px 15px 20px;
+    padding: 10px 50px;
+    border: none;
     font-size: 20px;
     margin-top: 20px;
-    background: #5E3BEE;
-    border-radius: 8px;
+    background: #314a06;
+    border-radius: 5px;
     display: flex;
-    margin-left: 530px;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .form {
@@ -352,13 +456,6 @@ textarea {
     height: 200px;
 }
 
-.socialIcon ul {
-    justify-content: center;
-    gap: 35px;
-    padding: 60px 0px 20px 0px;
-    list-style: none;
-    display: flex;
-}
 
 .copyright {
     font-weight: 400;
@@ -490,13 +587,7 @@ textarea {
         height: 200px;
     }
 
-    .socialIcon ul {
-        justify-content: center;
-        gap: 35px;
-        padding: 60px 0px 20px 0px;
-        list-style: none;
-        display: flex;
-    }
+
 
     .copyright {
         font-weight: 400;
@@ -517,11 +608,6 @@ textarea {
 
     .contactmedetail {
         font-size: 20px;
-    }
-
-    .FieldLabel {
-        font-size: 15px;
-        line-height: 130%;
     }
 
 

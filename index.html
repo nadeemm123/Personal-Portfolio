@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Portfolio Using CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,7 +32,7 @@
                         <a class="list" href="index.html">
                             <li>Home</li>
                         </a>
-                        <a class="list" href="#">
+                        <a class="list" href="#worked">
                             <li>Works</li>
                         </a>
                         <a class="list" href="Blog.html">
@@ -49,63 +54,62 @@
                     <p id="intro">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet <br> sint. Velit
                         officia consequat duis enim velit mollit. Exercitation veniam <br>consequat sunt nostrud amet
                     </p>
-                    <button id="resume"><a href="Nadeem New Latest Resume.pdf" class="resume"
-                            download="nadeem new latest resume">Download
-                            My Resume</a></button>
+                    <div class="resumsocial">
+                        <div>
+                            <button id="resume"><a href="Nadeem New Latest Resume.pdf" class="resume"
+                                    download="nadeem new latest resume">Download Resume</a></button>
+                        </div>
+
+                        <div class="socialIcon">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/nadeem-aslam-367bb921a/?originalSubdomain=pk"><img
+                                            class="social" src="link.png"> </a></li>
+                                <li><a href="#"><img class="social" src="facebook (2).png"> </a></li>
+                                <li><a href="#"><img class="social" src="whats.png"> </a></li>
+                                <li><a href="#">
+                                        <img class="social" src="x.png"> </a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
 
                 </div>
                 <div class="rightHeader">
                     <div>
-                        <img id="photo" src="nadeem.jpg">
+                        <img id="photo" src="nadeem (2).jpg">
                     </div>
                 </div>
             </div>
+
+
+            <div class="projectexp">
+                <div class="projects">
+                    <h2>01</h2>
+                    <p>Years of <br> Experience</p>
+                </div>
+                <div class="projects">
+                    <h2>10+</h2>
+                    <p>Projects <br> Completed</p>
+                </div>
+                <div class="projects">
+                    <h2>100+</h2>
+                    <p>Happy <br> Clienst</p>
+                </div>
+                <div class="projects">
+                    <h2>01</h2>
+                    <p>Years of <br> Experience</p>
+                </div>
+            </div>
         </div>
+
+
     </header>
 
-    <section class="recentPost">
-        <div class="posts">
 
 
-            <div class="viewAll">
-                <h3>Recent Posts</h3>
-                <p id="view"><a href="#">View All</a></p>
-            </div>
 
-            <div class="mainPost">
-
-                <div class="leftPost">
-                    <h2 class="heading"> Making a design system from <br>scratch</h2>
-                    <pre class="date">12 Feb 2020   |  Desing Pattern</pre>
-                    <p class="postdetail">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                        Velit
-                        officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-
-                <div class="leftPost">
-                    <h2 class="heading"> Making a design system from <br>scratch</h2>
-                    <pre class="date">12 Feb 2020   |  Desing Pattern</pre>
-                    <p class="postdetail">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                        Velit
-                        officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-                <div class="rightpost">
-                    <h2 class="heading"> Making a design system from <br>scratch</h2>
-                    <pre class="date">12 Feb 2020   |  Desing Pattern</pre>
-                    <p class="postdetail">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                        Velit
-                        officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <section class="FeaturedWork">
+    <section class="FeaturedWork" id="worked">
 
         <div class="featured">
 
@@ -191,66 +195,126 @@
     </section>
 
 
-    <section class="container contactMees">
 
-        <div class="UpperPart">
-            <h2 class="getintouch">Get In Touch</h2>
-            <h1 class="contactme">Contact Me</h1>
-            <p class="contactmedetail">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <section class="recentPost">
+        <div class="posts">
+
+
+            <div class="viewAll">
+                <h3>Recent Posts</h3>
+                <p id="view"><a href="#">View All</a></p>
+            </div>
+
+            <div class="mainPost">
+
+                <div class="leftPost">
+                    <img class="blogimg" src="Rectangle 30 (1).png">
+                    <h2 class="heading"> Making a design system from scratch</h2>
+                    <pre class="date">12 Feb 2020   |  Desing Pattern</pre>
+                    <p class="postdetail">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit
+                        officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+
+                <div class="leftPost">
+                    <img class="blogimg" src="Rectangle 30 (1).png">
+                    <h2 class="heading"> Making a design system from scratch</h2>
+                    <pre class="date">12 Feb 2020   |  Desing Pattern</pre>
+                    <p class="postdetail">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit
+                        officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="leftPost">
+                    <img class="blogimg" src="Rectangle 30 (1).png">
+                    <h2 class="heading"> Making a design system from scratch</h2>
+                    <pre class="date">12 Feb 2020   |  Desing Pattern</pre>
+                    <p class="postdetail">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                        Velit
+                        officia consequat
+                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="form">
-            <form action="/action_page.php">
-                <div class="flname">
-                    <div class="fname">
-                        <label for="fname" class="FieldLabel">First Name</label>
-                        <input type="text" class="inputtype" name="firstname" placeholder="Your name..">
-                    </div>
-                    <div class="fname "><label for="lname" class="FieldLabel">Last Name</label>
-                        <input type="text" class="inputtype" name="lastname" placeholder="Your last name..">
-                    </div>
+    <section class="contactMees">
+        <div class="insidecontact">
+
+
+            <div class="contactleft">
+                <div class="UpperPart">
+                    <h2 class="getintouch">Get In Touch</h2>
+                    <h1 class="contactme">Contact Me</h1>
+                    <p class="contactmedetail">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
 
-                <div class="flname">
-                    <div class="fname">
-                        <label for="fname" class="FieldLabel">Email</label>
-                        <input type="email" class="inputtype" name="firstname" placeholder="Your Email..">
-                    </div>
-                    <div class="fname"><label for="lname" class="FieldLabel">Phone Number</label>
-                        <input type="number" class="inputtype" name="lastname" placeholder="Your Phone Number..">
-                    </div>
+                <div class="form">
+                    <form action="/action_page.php">
+                        <div class="flname">
+                            <div class="fname">
+                                <label for="fname" class="FieldLabel">First Name</label>
+                                <input type="text" class="inputtype" name="firstname" placeholder="Your name..">
+                            </div>
+                            <div class="fname "><label for="lname" class="FieldLabel">Last Name</label>
+                                <input type="text" class="inputtype" name="lastname" placeholder="Your last name..">
+                            </div>
+                        </div>
+
+                        <div class="flname">
+                            <div class="fname">
+                                <label for="fname" class="FieldLabel">Email</label>
+                                <input type="email" class="inputtype" name="firstname" placeholder="Your Email..">
+                            </div>
+                            <div class="fname"><label for="lname" class="FieldLabel">Phone Number</label>
+                                <input type="number" class="inputtype" name="lastname"
+                                    placeholder="Your Phone Number..">
+                            </div>
+                        </div>
+
+                        <div class="fname">
+
+                            <label for="Service" class="FieldLabel">Choose a topic</label>
+
+                            <select id="Service" name="Service" class="slecetoption">
+                                <option value="Java">Java</option>
+                                <option value="CSS">CSS</option>
+                                <option value="HTML">HTML</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h2 class="FieldLabel">Message</h2>
+                            <textarea id="message" name="Message" rows="12" cols="170"
+                                placeholder="Enter Your Message Here">
+                 </textarea>
+                        </div>
+
+                        <div class="accept">
+                            <input type="checkbox" id="accept" name="acceptTerm">
+                            <p>I accept the terms</p>
+                        </div>
+
+
+                        <input type="submit" value="Submit" class="submitbutton">
+
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="contactright">
+                <div class="phon1">
+                    <h2>Phone: <span class="phnemail">03091433796</span></h2>
+                </div>
+                <div class="phon1">
+                    <h2>Email: <span class="phnemail">nadeemsup03@gmail.com</span></h2>
                 </div>
 
-                <div class="fname">
-
-                    <label for="Service" class="FieldLabel">Choose a topic</label>
-
-                    <select id="Service" name="Service" class="slecetoption">
-                        <option value="Java">Java</option>
-                        <option value="CSS">CSS</option>
-                        <option value="HTML">HTML</option>
-                    </select>
-                </div>
-
-                <div>
-                    <h2 class="FieldLabel">Message</h2>
-                    <textarea id="message" name="Message" rows="12" cols="170" placeholder="Enter Your Message Here">
-                     </textarea>
-                </div>
-
-                <div class="accept">
-                    <input type="checkbox" id="accept" name="acceptTerm">
-                    <p>I accept the terms</p>
-                </div>
-
-
-                <input type="submit" value="Submit" class="submitbutton">
-
-            </form>
-
+            </div>
         </div>
-
-
     </section>
 
 
@@ -259,11 +323,12 @@
     <footer class="footer">
         <div class="socialIcon">
             <ul>
-                <li><a href="#"><img src="fb.png"> </a></li>
-                <li><a href="#"><img src="Vector (1).png"> </a></li>
-                <li><a href="#"><img src="insta.png"> </a></li>
-                <li><a href="https://www.linkedin.com/in/nadeem-aslam-367bb921a/?originalSubdomain=pk"> <img
-                            src="Linkedin.png"> </a></li>
+                <li><a href="https://www.linkedin.com/in/nadeem-aslam-367bb921a/?originalSubdomain=pk"><img
+                            class="social" src="link.png"> </a></li>
+                <li><a href="#"><img class="social" src="facebook (2).png"> </a></li>
+                <li><a href="#"><img class="social" src="whats.png"> </a></li>
+                <li><a href="#">
+                        <img class="social" src="x.png"> </a></li>
             </ul>
         </div>
 
